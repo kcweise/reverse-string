@@ -1,7 +1,14 @@
 function reverseString(str) {
-  // type your code here
+  if (str.length < 1)
+    return ("");
+  
+  let reversed = "";
+  for (let i = str.length -1; i >= 0; i--){
+    reversed += str[i];
+  }
+  return reversed
 }
-
+    
 if (require.main === module) {
   // add your own tests in here
   console.log("Expecting: 'ih'");
